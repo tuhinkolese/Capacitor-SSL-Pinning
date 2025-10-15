@@ -56,7 +56,8 @@
     "prepublishOnly": "npm run build",
     "debug-build": "tsc --listFiles && npm run build",
     "chmod-cli": "node scripts/chmod.js",
-    "postinstall": "node scripts/chmod.js"
+    "postinstall": "node scripts/chmod.js",
+    "prepare": "npm run build"  
   },
   "devDependencies": {
     "@capacitor/android": "^7.4.3",
